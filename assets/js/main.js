@@ -49,6 +49,7 @@ sr.reveal('.resume__subtitle', {});
 sr.reveal('.resume__text', {});
 sr.reveal('.resume__data', { interval: 200 });
 sr.reveal('.resume__img', { delay: 600 });
+sr.reveal('.resume__icon', { interval: 200 });
 
 /*SCROLL WORK*/
 sr.reveal('.work__img', { interval: 200 });

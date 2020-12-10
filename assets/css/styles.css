@@ -342,9 +342,9 @@ img {
 }
 
 .resume__icon {
-    font-size: 2rem;
+    font-size: 4rem;
     margin-right: var(--mb-2);
-    color: var(--first-color);
+    color: var(--second-color);
 }
 
 .resume__names {
@@ -554,7 +554,8 @@ img {
         margin-top: 30%;
     }
     .home__img {
-        margin-right: 15%;
+        display: flex;
+        max-width: 1024px;
     }
 }
 
@@ -565,8 +566,5 @@ img {
     }
     .home__data {
         margin-top: 30%;
-    }
-    .home__img {
-        margin-right: 25%;
     }
 }
