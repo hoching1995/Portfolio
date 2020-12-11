@@ -276,6 +276,11 @@ img {
     margin-right: 4%;
 }
 
+.home__img img {
+    border-radius: .5rem;
+    width: ;
+}
+
 
 /*BUTTONS*/
 
@@ -522,6 +527,7 @@ img {
     .home__img {
         z-index: -1;
         min-width: 768px;
+        border-radius: .5rem;
     }
     .about__container,
     .resume__container {
@@ -555,7 +561,8 @@ img {
     }
     .home__img {
         display: flex;
-        max-width: 1024px;
+        width: 1024px;
+        border-radius: .5rem;
     }
 }
 
