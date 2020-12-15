@@ -6,6 +6,7 @@ const showMenu = (toggleId, navId) => {
     if (toggle && nav) {
         toggle.addEventListener('click', () => {
             nav.classList.toggle('show')
+
         })
     }
 }
@@ -22,8 +23,10 @@ function linkAction() {
     /*Remove menu mobile*/
     const navMenu = document.getElementById('nav-menu')
     navMenu.classList.remove('show')
+
 }
 navLink.forEach(n => n.addEventListener('click', linkAction));
+
 
 /*===== SCROLL REVEAL ANIMATION =====*/
 const sr = ScrollReveal({
@@ -57,3 +60,20 @@ sr.reveal('.work__discription', { interval: 200 });
 
 /*SCROLL CONTACT*/
 sr.reveal('.contact__input', { interval: 200 });
+
+
+function closeNav() {
+    const bar = document.getElementById("nav-menu");
+    const home = document.getElementById("home");
+    const about = document.getElementById("about");
+
+
+    window.onclick = function(e) {
+        if (e.target == bar || e.target == home || e.target == about) {
+            const navMenu = document.getElementById('nav-menu')
+            navMenu.classList.remove('show')
+
+        }
+    }
+}
+closeNav();
